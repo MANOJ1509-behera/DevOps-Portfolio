@@ -39,26 +39,28 @@ export default function Hero() {
           </div>
 
           <p className="mt-8 text-gray-400 text-lg leading-relaxed max-w-xl">
-            DevOps Engineer with 2+ years of hands-on experience in building 
-            CI/CD pipelines, managing containerized applications, and 
-            supporting cloud infrastructure. Focused on improving deployment 
-            efficiency and system reliability.
+            Passionate DevOps Engineer with over 2+ years of experience streamlining software delivery through robust CI/CD pipelines, Kubernetes orchestration, and cloud infrastructure management. Dedicated to enhancing deployment velocity, system reliability, and operational excellence.
           </p>
 
           {/* Buttons */}
           <div className="mt-10 flex flex-wrap gap-6">
-            <a
-              href="#contact"
-              className="px-8 py-3 bg-sky-500 hover:bg-sky-600 transition rounded-full text-white font-medium shadow-lg"
+            <motion.a
+              href="/resume.pdf"
+              download
+              animate={{ boxShadow: ["0 0 0 rgba(14, 165, 233, 0)", "0 0 20px rgba(14, 165, 233, 0.5)", "0 0 0 rgba(14, 165, 233, 0)"] }}
+              transition={{ duration: 2, repeat: Infinity }}
+              whileHover={{ scale: 1.1, rotate: 2, boxShadow: "0 0 30px rgba(14, 165, 233, 0.8)" }}
+              whileTap={{ scale: 0.95 }}
+              className="px-8 py-3 bg-gradient-to-r from-sky-500 to-blue-500 hover:from-sky-600 hover:to-blue-600 transition rounded-full text-white font-medium shadow-lg"
             >
-              Contact Me
-            </a>
+              Hire Me
+            </motion.a>
 
             <a
-              href="#projects"
+              href="#contact"
               className="px-8 py-3 border border-sky-500 text-sky-400 hover:bg-sky-500 hover:text-white transition rounded-full font-medium"
             >
-              View Projects
+              Contact Me
             </a>
           </div>
         </motion.div>

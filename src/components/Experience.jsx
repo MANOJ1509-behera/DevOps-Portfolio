@@ -9,10 +9,12 @@ export default function Experience() {
       role: "DevOps Engineer",
       duration: "2023 - Present",
       description: [
-        "Designed and implemented CI/CD pipelines using GitLab & Jenkins.",
-        "Managed Kubernetes clusters and containerized applications.",
-        "Automated infrastructure using Terraform.",
-        "Implemented DORA metrics to improve deployment performance.",
+        "Designed GitLab CI/CD pipelines using effective branching strategies for streamlined releases.",
+        "Implemented DevSecOps pipelines with integrated security and quality checks before deployment",
+        "Managed Kubernetes clusters and deployed containerized applications.",
+        "Automated Kubernetes deployments using Helm charts.",
+        "Deployed BPMN platform across development, staging, and production environments.",
+        "Tracked deployment performance using DORA metrics."
       ],
     },
   ];

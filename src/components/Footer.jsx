@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, Gitlab } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -27,7 +27,7 @@ export default function Footer() {
         <div className="flex justify-center gap-8 mb-8">
           <motion.a
             whileHover={{ scale: 1.2, y: -5 }}
-            href="https://github.com/your-username"
+            href="https://github.com/MANOJ1509-behera"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-sky-400 transition"
@@ -37,7 +37,17 @@ export default function Footer() {
 
           <motion.a
             whileHover={{ scale: 1.2, y: -5 }}
-            href="https://linkedin.com/in/your-profile"
+            href="https://gitlab.com/manojbehera1509"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-orange-400 transition"
+          >
+            <Gitlab size={24} />
+          </motion.a>
+
+          <motion.a
+            whileHover={{ scale: 1.2, y: -5 }}
+            href="https://www.linkedin.com/in/manoj-kumar-behera-62b3772ab/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-sky-400 transition"
@@ -47,7 +57,7 @@ export default function Footer() {
 
           <motion.a
             whileHover={{ scale: 1.2, y: -5 }}
-            href="mailto:your-email@gmail.com"
+            href="mailto:manojbehera1509@gmail.com"
             className="text-gray-400 hover:text-sky-400 transition"
           >
             <Mail size={24} />

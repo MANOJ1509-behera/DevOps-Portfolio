@@ -6,7 +6,7 @@ export default function Skills() {
     {
       icon: <Cloud size={40} />,
       title: "Cloud",
-      description: "AWS, Azure",
+      description: "AWS"
     },
     {
       icon: <Container size={40} />,
@@ -16,7 +16,7 @@ export default function Skills() {
     {
       icon: <GitBranch size={40} />,
       title: "CI/CD",
-      description: "GitLab, Jenkins, SonarQube",
+      description: "GitLab CI/CD",
     },
     {
       icon: <Server size={40} />,
@@ -49,7 +49,7 @@ export default function Skills() {
               {skill.title}
             </h3>
 
-            <p className="text-gray-400">
+            <p className="text-gray-600 dark:text-gray-400">
               {skill.description}
             </p>
           </motion.div>

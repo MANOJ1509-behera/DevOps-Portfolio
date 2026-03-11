@@ -1,23 +1,18 @@
 import { motion } from "framer-motion";
-import { Award, ShieldCheck, Cloud } from "lucide-react";
+import { Award, ShieldCheck } from "lucide-react";
 
 export default function Certifications() {
 
   const certifications = [
     {
-      icon: <Cloud size={40} />,
-      title: "AWS Certified",
-      description: "Cloud Practitioner / Associate Level",
-    },
-    {
       icon: <ShieldCheck size={40} />,
-      title: "Kubernetes Certified",
-      description: "CKA / CKAD (If applicable)",
+      title: "Azure Certified",
+      description: "Associate Level",
     },
     {
       icon: <Award size={40} />,
-      title: "DevOps Certification",
-      description: "CI/CD & Automation Specialization",
+      title: "AI White Belt Certification",
+      description: "Introduction to Artificial Intelligence",
     },
   ];
 
@@ -27,7 +22,7 @@ export default function Certifications() {
         Certifications
       </h2>
 
-      <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+      <div className="grid md:grid-cols-2 gap-10 max-w-4xl mx-auto">
 
         {certifications.map((cert, index) => (
           <motion.div

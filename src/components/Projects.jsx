@@ -1,24 +1,22 @@
 import { motion } from "framer-motion";
-import { ExternalLink, Github } from "lucide-react";
+import { Gitlab } from "lucide-react";
 
 export default function Projects() {
 
   const projects = [
     {
-      title: "CI/CD Automation Pipeline",
+      title: "Job Portal CI/CD Pipeline with Kubernetes & Monitoring",
       description:
-        "Built end-to-end CI/CD pipelines using GitLab, Docker, and Kubernetes. Reduced deployment time by 40%.",
-      tech: "GitLab • Docker • Kubernetes • AWS",
-      github: "#",
-      demo: "#",
+        "Engineered a comprehensive CI/CD pipeline for a job portal application, automating Docker container builds, Kubernetes deployments via Helm charts, and integrating Prometheus & Grafana for real-time monitoring, metrics visualization, and system observability to ensure high availability and performance.",
+      tech: "Kubernetes • Docker • Helm • Prometheus • Grafana • GitLab CI/CD",
+      gitlab: "https://gitlab.com/devops-practice6391147/job_portal_website",
     },
     {
-      title: "DORA Metrics Dashboard",
+      title: "DevSecOps Pipeline for Juice Shop with Comprehensive Security Scans",
       description:
-        "Implemented DORA metrics tracking system to monitor deployment frequency, MTTR, and change failure rate.",
-      tech: "Node.js • React • MongoDB • Jenkins",
-      github: "#",
-      demo: "#",
+        "Developed a DevSecOps CI/CD pipeline for Juice Shop, integrating SAST, DAST, SCA, SonarQube scans, and container security scanning to detect and mitigate vulnerabilities throughout the development lifecycle.",
+      tech: "GitLab CI/CD • SAST • DAST • SCA • SonarQube • Container Scanning",
+      gitlab: "https://gitlab.com/devsecops2551408/juice-shop/-/blob/main/.gitlab-ci.yml?ref_type=heads",
     },
   ];
 
@@ -50,7 +48,7 @@ export default function Projects() {
                 {project.title}
               </h3>
 
-              <p className="text-gray-400 mb-6">
+              <p className="text-gray-600 dark:text-gray-400 mb-6">
                 {project.description}
               </p>
 
@@ -61,23 +59,13 @@ export default function Projects() {
               <div className="flex gap-6">
 
                 <a
-                  href={project.github}
+                  href={project.gitlab}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-gray-300 hover:text-sky-400 transition"
                 >
-                  <Github size={18} />
-                  Code
-                </a>
-
-                <a
-                  href={project.demo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-gray-300 hover:text-sky-400 transition"
-                >
-                  <ExternalLink size={18} />
-                  Live
+                  <Gitlab size={18} />
+                  GitLab
                 </a>
 
               </div>

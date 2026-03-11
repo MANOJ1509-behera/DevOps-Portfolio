@@ -7,7 +7,7 @@ export default function About() {
       icon: <Cloud size={42} />,
       title: "Cloud Architecture",
       description:
-        "Designing secure and scalable infrastructure using AWS & Azure.",
+        "Designing secure and scalable infrastructure using AWS.",
     },
     {
       icon: <Code2 size={42} />,
@@ -91,7 +91,7 @@ export default function About() {
                   {item.title}
                 </h3>
 
-                <p className="text-gray-400">
+                <p className="text-gray-600 dark:text-gray-400">
                   {item.description}
                 </p>
               </div>

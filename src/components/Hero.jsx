@@ -45,7 +45,7 @@ export default function Hero() {
           {/* Buttons */}
           <div className="mt-10 flex flex-wrap gap-6">
             <motion.a
-              href="/resume.pdf"
+              href="/Manoj_Resume.pdf"
               download
               animate={{ boxShadow: ["0 0 0 rgba(14, 165, 233, 0)", "0 0 20px rgba(14, 165, 233, 0.5)", "0 0 0 rgba(14, 165, 233, 0)"] }}
               transition={{ duration: 2, repeat: Infinity }}
